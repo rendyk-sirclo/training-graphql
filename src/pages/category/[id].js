@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useQuery } from "@apollo/client";
-import { getCategoryById } from "./services/graphql/schema";
+import { getCategoryById } from "@/lib/services/graphql/schemaCategory";
 import Link from "next/link";
 
 const CategoryPage = () => {
@@ -12,8 +12,18 @@ const CategoryPage = () => {
   });
   const { loading, error, data } = response;
 
-  if (loading) return <div className="mainSection"><p>Loading...</p></div>;
-  if (error) return <div className="mainSection"><p>Error: {error.message}</p></div>;
+  if (loading)
+    return (
+      <div className="mainSection">
+        <p>Loading...</p>
+      </div>
+    );
+  if (error)
+    return (
+      <div className="mainSection">
+        <p>Error: {error.message}</p>
+      </div>
+    );
 
   console.log(data);
 

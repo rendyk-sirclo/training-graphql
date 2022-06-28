@@ -1,5 +1,5 @@
 import { useMutation } from "@apollo/client";
-import { postSubscribeEmail } from "./services/graphql/schema";
+import { postSubscribeEmail } from "@/lib/services/graphql/schemaSubscribe";
 
 const SubscribePage = () => {
   let input;

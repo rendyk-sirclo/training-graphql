@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useQuery } from "@apollo/client";
-import { getCategories } from "./category/services/graphql/schema";
+import { getCategories } from "@/lib/services/graphql/schemaCategory";
 import Link from "next/link";
 
 export default function Home() {

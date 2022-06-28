@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { useQuery } from "@apollo/client";
-import { getProductBySku } from "./services/graphql/schema";
-import Link from "next/link";
+import { getProductBySku } from "@/lib/services/graphql/schemaProduct";
 import Image from "next/image";
 
 const ProductPage = () => {
