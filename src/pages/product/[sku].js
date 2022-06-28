@@ -34,6 +34,7 @@ const ProductPage = () => {
           {data.products.items[0].image && (
             <Image
               src={data.products.items[0].image.url}
+              alt={data.products.items[0].name}
               width={300}
               height={300}
             />
