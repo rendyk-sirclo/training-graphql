@@ -1,0 +1,25 @@
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 0 2rem 0 2rem;
+}
+
+.navbar > div {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 1.75rem 0 1.75rem 0;
+}
+
+.navbar > div > div {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar a {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgb(15, 23, 42);
+}

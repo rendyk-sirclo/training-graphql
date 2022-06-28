@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.mainSection {
+  padding: 4rem 2rem;
+}
